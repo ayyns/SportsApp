@@ -79,6 +79,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         registerBroadCastReceiver()
     }
 
+    override fun onResume() {
+        super.onResume()
+        binding.navView.setCheckedItem(R.id.nav_home)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        unregisterReceiver(broadcastReceiver)
+    }
+
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         var fragment: Fragment? = null
         var title = getString(R.string.app_name)
