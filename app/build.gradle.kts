@@ -69,4 +69,6 @@ dependencies {
     implementation(libs.androidx.lifecycle.livedata.ktx)
 
     implementation(libs.koin.android)
+
+    debugImplementation ("com.squareup.leakcanary:leakcanary-android:2.10")
 }
