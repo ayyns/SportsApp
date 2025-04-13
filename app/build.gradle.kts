@@ -21,7 +21,7 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -70,5 +70,5 @@ dependencies {
 
     implementation(libs.koin.android)
 
-    debugImplementation ("com.squareup.leakcanary:leakcanary-android:2.10")
+    debugImplementation (libs.leakcanary.android)
 }
