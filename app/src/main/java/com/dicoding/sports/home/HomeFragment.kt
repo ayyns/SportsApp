@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dicoding.sports.R
-import com.dicoding.core.ui.SportsAdapter
+import com.dicoding.sports.ui.SportsAdapter
 import com.dicoding.sports.databinding.FragmentHomeBinding
 import com.dicoding.sports.detail.DetailTourismActivity
 import org.koin.androidx.viewmodel.ext.android.viewModel

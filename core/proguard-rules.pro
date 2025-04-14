@@ -19,3 +19,21 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-dontwarn java.lang.invoke.StringConcatFactory
+
+# Menjaga sealed class Resource dan subclass-nya
+-keep class com.dicoding.core.data.Resource { *; }
+-keep class com.dicoding.core.data.Resource$* { *; }
+
+# Menjaga semua model domain
+-keep class com.dicoding.core.domain.model.** { *; }
+
+# Menjaga repository dan use case
+-keep class com.dicoding.core.domain.repository.** { *; }
+-keep class com.dicoding.core.domain.usecase.** { *; }
+
+# Menjaga module dependency injection (Koin)
+-keep class com.dicoding.core.di.** { *; }
+
+# Menjaga utility class
+-keep class com.saefulrdevs.mubeego.core.util.** { *; }

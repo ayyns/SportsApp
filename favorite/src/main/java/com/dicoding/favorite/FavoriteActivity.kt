@@ -2,10 +2,9 @@ package com.dicoding.favorite
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.dicoding.core.ui.SportsAdapter
+import com.dicoding.sports.ui.SportsAdapter
 import com.dicoding.favorite.databinding.ActivityFavoriteBinding
 import com.dicoding.favorite.di.favoriteModule
 import com.dicoding.sports.detail.DetailTourismActivity

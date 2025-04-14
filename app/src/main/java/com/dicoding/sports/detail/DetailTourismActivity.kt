@@ -21,10 +21,6 @@ class DetailTourismActivity : AppCompatActivity() {
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
 
-//        hapus kode berikut
-//        val factory = ViewModelFactory.getInstance(this)
-//        detailTourismViewModel = ViewModelProvider(this, factory)[DetailTourismViewModel::class.java]
-
         val detailSports = getParcelableExtra(intent, EXTRA_DATA, Sports::class.java)
         showDetailTourism(detailSports)
     }
